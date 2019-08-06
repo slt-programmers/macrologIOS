@@ -14,7 +14,7 @@
         <!--Diary-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="macrologios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" customClass="DiaryViewController" customModule="macrologios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -45,12 +45,21 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JOg-4d-Vwa" customClass="ProgressCircleView" customModule="macrologios" customModuleProvider="target">
+                                <rect key="frame" x="157" y="84" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="F99-Jn-J8n"/>
+                                    <constraint firstAttribute="width" constant="100" id="GSg-rV-fn7"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="JOg-4d-Vwa" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="40" id="1hT-AG-cDQ"/>
                             <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
                             <constraint firstItem="hsN-me-OpL" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" id="EP2-kp-kk2"/>
                             <constraint firstItem="hsN-me-OpL" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="JT6-IU-w78"/>
+                            <constraint firstItem="JOg-4d-Vwa" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="KGr-go-mRC"/>
                             <constraint firstItem="wLT-m7-5mM" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="ast-JH-m93"/>
                             <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="8" symbolic="YES" id="cfb-er-3JN"/>
                             <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="e1l-AV-tCB"/>
@@ -72,7 +81,7 @@
         <!--Food-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="macrologios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" customClass="FoodViewController" customModule="macrologios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -128,7 +137,7 @@
         <!--Third-->
         <scene sceneID="MoV-Yh-Mug">
             <objects>
-                <viewController id="ujv-Ff-ij9" userLabel="Third" customClass="ThirdViewController" customModule="macrologios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ujv-Ff-ij9" userLabel="Third" customClass="UserViewController" customModule="macrologios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5Vd-tJ-Rpa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

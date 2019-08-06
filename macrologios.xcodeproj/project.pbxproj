@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		B393797322F95C360088C62C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B393797222F95C360088C62C /* AppDelegate.swift */; };
-		B393797522F95C360088C62C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B393797422F95C360088C62C /* FirstViewController.swift */; };
-		B393797722F95C360088C62C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B393797622F95C360088C62C /* SecondViewController.swift */; };
+		B393797522F95C360088C62C /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B393797422F95C360088C62C /* DiaryViewController.swift */; };
+		B393797722F95C360088C62C /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B393797622F95C360088C62C /* FoodViewController.swift */; };
 		B393797A22F95C360088C62C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B393797822F95C360088C62C /* Main.storyboard */; };
 		B393797C22F95C360088C62C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B393797B22F95C360088C62C /* Assets.xcassets */; };
 		B393797F22F95C360088C62C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B393797D22F95C360088C62C /* LaunchScreen.storyboard */; };
 		B393798A22F95C360088C62C /* macrologiosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B393798922F95C360088C62C /* macrologiosTests.swift */; };
-		B393799522F9632C0088C62C /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B393799422F9632C0088C62C /* ThirdViewController.swift */; };
+		B393799522F9632C0088C62C /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B393799422F9632C0088C62C /* UserViewController.swift */; };
+		B39379CA22F9B3830088C62C /* ProgressCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39379C922F9B3830088C62C /* ProgressCircleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,8 +31,8 @@
 /* Begin PBXFileReference section */
 		B393796F22F95C360088C62C /* macrologios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = macrologios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B393797222F95C360088C62C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B393797422F95C360088C62C /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		B393797622F95C360088C62C /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		B393797422F95C360088C62C /* DiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
+		B393797622F95C360088C62C /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
 		B393797922F95C360088C62C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B393797B22F95C360088C62C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B393797E22F95C360088C62C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -39,13 +40,14 @@
 		B393798522F95C360088C62C /* macrologiosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = macrologiosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B393798922F95C360088C62C /* macrologiosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = macrologiosTests.swift; sourceTree = "<group>"; };
 		B393798B22F95C360088C62C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B393799422F9632C0088C62C /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		B393799422F9632C0088C62C /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		B39379C122F9952E0088C62C /* Assistant-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Assistant-ExtraLight.ttf"; sourceTree = "<group>"; };
 		B39379C222F9952E0088C62C /* Assistant-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Assistant-Bold.ttf"; sourceTree = "<group>"; };
 		B39379C322F9952E0088C62C /* Assistant-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Assistant-SemiBold.ttf"; sourceTree = "<group>"; };
 		B39379C422F9952F0088C62C /* Assistant-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Assistant-Regular.ttf"; sourceTree = "<group>"; };
 		B39379C522F9952F0088C62C /* Assistant-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Assistant-Light.ttf"; sourceTree = "<group>"; };
 		B39379C622F9952F0088C62C /* Assistant-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Assistant-ExtraBold.ttf"; sourceTree = "<group>"; };
+		B39379C922F9B3830088C62C /* ProgressCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCircleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,13 +91,14 @@
 			children = (
 				B393799F22F992310088C62C /* fonts */,
 				B393797222F95C360088C62C /* AppDelegate.swift */,
-				B393797422F95C360088C62C /* FirstViewController.swift */,
-				B393797622F95C360088C62C /* SecondViewController.swift */,
-				B393799422F9632C0088C62C /* ThirdViewController.swift */,
+				B393797422F95C360088C62C /* DiaryViewController.swift */,
+				B393797622F95C360088C62C /* FoodViewController.swift */,
+				B393799422F9632C0088C62C /* UserViewController.swift */,
 				B393797822F95C360088C62C /* Main.storyboard */,
 				B393797B22F95C360088C62C /* Assets.xcassets */,
 				B393797D22F95C360088C62C /* LaunchScreen.storyboard */,
 				B393798022F95C360088C62C /* Info.plist */,
+				B39379C922F9B3830088C62C /* ProgressCircleView.swift */,
 			);
 			path = macrologios;
 			sourceTree = "<group>";
@@ -223,10 +226,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B393797722F95C360088C62C /* SecondViewController.swift in Sources */,
+				B393797722F95C360088C62C /* FoodViewController.swift in Sources */,
+				B39379CA22F9B3830088C62C /* ProgressCircleView.swift in Sources */,
 				B393797322F95C360088C62C /* AppDelegate.swift in Sources */,
-				B393799522F9632C0088C62C /* ThirdViewController.swift in Sources */,
-				B393797522F95C360088C62C /* FirstViewController.swift in Sources */,
+				B393799522F9632C0088C62C /* UserViewController.swift in Sources */,
+				B393797522F95C360088C62C /* DiaryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
