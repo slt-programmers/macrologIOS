@@ -40,6 +40,12 @@
 		B393798922F95C360088C62C /* macrologiosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = macrologiosTests.swift; sourceTree = "<group>"; };
 		B393798B22F95C360088C62C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B393799422F9632C0088C62C /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		B39379C122F9952E0088C62C /* Assistant-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Assistant-ExtraLight.ttf"; sourceTree = "<group>"; };
+		B39379C222F9952E0088C62C /* Assistant-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Assistant-Bold.ttf"; sourceTree = "<group>"; };
+		B39379C322F9952E0088C62C /* Assistant-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Assistant-SemiBold.ttf"; sourceTree = "<group>"; };
+		B39379C422F9952F0088C62C /* Assistant-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Assistant-Regular.ttf"; sourceTree = "<group>"; };
+		B39379C522F9952F0088C62C /* Assistant-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Assistant-Light.ttf"; sourceTree = "<group>"; };
+		B39379C622F9952F0088C62C /* Assistant-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Assistant-ExtraBold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,7 @@
 		B393797122F95C360088C62C /* macrologios */ = {
 			isa = PBXGroup;
 			children = (
+				B393799F22F992310088C62C /* fonts */,
 				B393797222F95C360088C62C /* AppDelegate.swift */,
 				B393797422F95C360088C62C /* FirstViewController.swift */,
 				B393797622F95C360088C62C /* SecondViewController.swift */,
@@ -100,6 +107,19 @@
 				B393798B22F95C360088C62C /* Info.plist */,
 			);
 			path = macrologiosTests;
+			sourceTree = "<group>";
+		};
+		B393799F22F992310088C62C /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B39379C222F9952E0088C62C /* Assistant-Bold.ttf */,
+				B39379C622F9952F0088C62C /* Assistant-ExtraBold.ttf */,
+				B39379C122F9952E0088C62C /* Assistant-ExtraLight.ttf */,
+				B39379C522F9952F0088C62C /* Assistant-Light.ttf */,
+				B39379C422F9952F0088C62C /* Assistant-Regular.ttf */,
+				B39379C322F9952E0088C62C /* Assistant-SemiBold.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

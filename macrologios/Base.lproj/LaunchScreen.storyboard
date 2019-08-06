@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Assistant-Light.ttf">
+            <string>Assistant-Light</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -21,12 +26,20 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="Jbu-VH-Kne">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Macrolog" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mP5-3N-vfL">
+                                <rect key="frame" x="146.5" y="315" width="121" height="42"/>
+                                <fontDescription key="fontDescription" name="Assistant-Light" family="Assistant" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.24705882352941178" green="0.31764705882352939" blue="0.70980392156862748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="mP5-3N-vfL" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" multiplier="0.75" id="J6g-0l-HMX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jbu-VH-Kne" secondAttribute="trailing" id="eEe-2l-waX"/>
                             <constraint firstItem="Jbu-VH-Kne" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="h1w-qR-jst"/>
                             <constraint firstItem="Jbu-VH-Kne" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="jnw-d9-8xX"/>
+                            <constraint firstItem="mP5-3N-vfL" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="v1O-wb-9qD"/>
                             <constraint firstAttribute="bottom" secondItem="Jbu-VH-Kne" secondAttribute="bottom" id="yw4-dU-0CN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
