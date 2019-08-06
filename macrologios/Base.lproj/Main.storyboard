@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,6 +19,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wLT-m7-5mM">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                <color key="backgroundColor" name="primaryBlue"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="iUc-IK-SUa"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header" translatesAutoresizingMaskIntoConstraints="NO" id="hsN-me-OpL">
+                                <rect key="frame" x="0.0" y="44" width="414" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="OQG-X6-k5O"/>
+                                </constraints>
+                            </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
                                 <rect key="frame" x="132" y="426.5" width="150.5" height="43"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -35,9 +49,15 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
+                            <constraint firstItem="hsN-me-OpL" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" id="EP2-kp-kk2"/>
+                            <constraint firstItem="hsN-me-OpL" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="JT6-IU-w78"/>
+                            <constraint firstItem="wLT-m7-5mM" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="ast-JH-m93"/>
                             <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="8" symbolic="YES" id="cfb-er-3JN"/>
                             <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="e1l-AV-tCB"/>
                             <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="wLT-m7-5mM" secondAttribute="trailing" id="nVK-sL-Mgu"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="hsN-me-OpL" secondAttribute="trailing" id="qhe-Be-6OW"/>
+                            <constraint firstItem="wLT-m7-5mM" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="rRS-7O-TBS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
@@ -56,7 +76,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <rect key="frame" x="106.5" y="426.5" width="201.5" height="43"/>
+                                <rect key="frame" x="106" y="426.5" width="202" height="43"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -68,13 +88,32 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xVM-mc-fym">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                <color key="backgroundColor" name="primaryBlue"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="OaS-Jr-4LA"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header" translatesAutoresizingMaskIntoConstraints="NO" id="ycT-7y-dY0">
+                                <rect key="frame" x="0.0" y="44" width="414" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="jIq-eJ-bax"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="ycT-7y-dY0" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" id="3pd-FQ-F7u"/>
+                            <constraint firstItem="ycT-7y-dY0" firstAttribute="centerX" secondItem="NDk-cv-Gan" secondAttribute="centerX" id="9UB-ej-Lbk"/>
                             <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
                             <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
+                            <constraint firstItem="xVM-mc-fym" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="aE0-zs-Cnt"/>
                             <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
                             <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
+                            <constraint firstItem="xVM-mc-fym" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" id="r5T-VN-pAB"/>
+                            <constraint firstItem="xVM-mc-fym" firstAttribute="trailing" secondItem="ycT-7y-dY0" secondAttribute="trailing" id="vtN-0J-3iX"/>
+                            <constraint firstItem="xVM-mc-fym" firstAttribute="leading" secondItem="ycT-7y-dY0" secondAttribute="leading" id="wGH-Eu-jej"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
@@ -105,12 +144,31 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hz7-6p-uUS">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                <color key="backgroundColor" name="primaryBlue"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Fjf-ua-ee1"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header" translatesAutoresizingMaskIntoConstraints="NO" id="Ysm-89-Ypy">
+                                <rect key="frame" x="0.0" y="44" width="414" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="yr7-xS-CPP"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="BWE-dF-yA2" firstAttribute="centerY" secondItem="5Vd-tJ-Rpa" secondAttribute="centerY" id="MbS-0F-MSL"/>
                             <constraint firstItem="hhR-yH-h1T" firstAttribute="centerX" secondItem="5Vd-tJ-Rpa" secondAttribute="centerX" id="Pm8-2N-c0c"/>
+                            <constraint firstItem="hz7-6p-uUS" firstAttribute="leading" secondItem="5Vd-tJ-Rpa" secondAttribute="leading" id="TM3-Hu-EXB"/>
                             <constraint firstItem="BWE-dF-yA2" firstAttribute="centerX" secondItem="5Vd-tJ-Rpa" secondAttribute="centerX" id="TQP-pr-xQY"/>
+                            <constraint firstItem="hz7-6p-uUS" firstAttribute="leading" secondItem="Ysm-89-Ypy" secondAttribute="leading" id="ZSG-tA-1z9"/>
+                            <constraint firstItem="hz7-6p-uUS" firstAttribute="top" secondItem="5Vd-tJ-Rpa" secondAttribute="top" id="iXf-PV-uo2"/>
+                            <constraint firstItem="Ysm-89-Ypy" firstAttribute="top" secondItem="lGx-ke-wcj" secondAttribute="top" id="sK5-F6-0b3"/>
+                            <constraint firstItem="hz7-6p-uUS" firstAttribute="trailing" secondItem="Ysm-89-Ypy" secondAttribute="trailing" id="uGh-OU-wwr"/>
+                            <constraint firstItem="Ysm-89-Ypy" firstAttribute="centerX" secondItem="BWE-dF-yA2" secondAttribute="centerX" id="xA1-ee-g1F"/>
                             <constraint firstItem="hhR-yH-h1T" firstAttribute="top" secondItem="BWE-dF-yA2" secondAttribute="bottom" constant="8" symbolic="YES" id="zkn-eL-F13"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lGx-ke-wcj"/>
@@ -119,7 +177,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="udx-25-y0i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1026" y="313"/>
+            <point key="canvasLocation" x="1009" y="313"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -144,6 +202,10 @@
     <resources>
         <image name="diary" width="18" height="18"/>
         <image name="food" width="18" height="18"/>
+        <image name="header" width="333.33334350585938" height="192"/>
         <image name="user" width="18" height="18"/>
+        <namedColor name="primaryBlue">
+            <color red="0.24705882352941178" green="0.31764705882352939" blue="0.70980392156862748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>
