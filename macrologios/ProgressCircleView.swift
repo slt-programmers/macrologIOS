@@ -28,13 +28,14 @@ class ProgressCircleView: UIView {
         shapeLayer.path = path.cgPath
         shapeLayer.lineWidth = 5
         shapeLayer.fillColor = nil
-        shapeLayer.strokeColor = UIColor.init(red: CGFloat(255), green: CGFloat(255), blue: CGFloat(255), alpha: CGFloat(0.05)).cgColor
+        shapeLayer.strokeColor = UIColor.white.cgColor
+        shapeLayer.opacity = 0.3
 
         progressLayer = CAShapeLayer();
         progressLayer.path = path.cgPath
         progressLayer.lineWidth = 5
         progressLayer.fillColor = nil
-        progressLayer.strokeColor = UIColor.orange.cgColor
+        progressLayer.strokeColor = UIColor.white.cgColor
         progressLayer.strokeEnd = 0.75
 
         self.layer.addSublayer(shapeLayer);

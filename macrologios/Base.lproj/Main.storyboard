@@ -10,6 +10,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Assistant-Light.ttf">
+            <string>Assistant-Light</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Diary-->
         <scene sceneID="hNz-n2-bh7">
@@ -45,28 +50,73 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Protein" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KzJ-7a-A5t">
+                                <rect key="frame" x="42" y="60" width="66" height="21"/>
+                                <fontDescription key="fontDescription" name="Assistant-Light" family="Assistant" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JOg-4d-Vwa" customClass="ProgressCircleView" customModule="macrologios" customModuleProvider="target">
-                                <rect key="frame" x="157" y="84" width="100" height="100"/>
+                                <rect key="frame" x="50" y="121" width="50" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="F99-Jn-J8n"/>
-                                    <constraint firstAttribute="width" constant="100" id="GSg-rV-fn7"/>
+                                    <constraint firstAttribute="height" constant="50" id="F99-Jn-J8n"/>
+                                    <constraint firstAttribute="width" constant="50" id="GSg-rV-fn7"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xCQ-VK-UBM">
+                                <rect key="frame" x="182" y="60" width="50" height="21"/>
+                                <fontDescription key="fontDescription" name="Assistant-Light" family="Assistant" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nt5-mm-GUb" customClass="ProgressCircleView" customModule="macrologios" customModuleProvider="target">
+                                <rect key="frame" x="182" y="121" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="YK0-8K-9ny"/>
+                                    <constraint firstAttribute="width" constant="50" id="flU-K9-xEB"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carbs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5aF-Bg-XDy">
+                                <rect key="frame" x="314" y="60" width="50" height="21"/>
+                                <fontDescription key="fontDescription" name="Assistant-Light" family="Assistant" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rwF-ig-3E6" customClass="ProgressCircleView" customModule="macrologios" customModuleProvider="target">
+                                <rect key="frame" x="314" y="121" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="5Vw-K0-2sd"/>
+                                    <constraint firstAttribute="height" constant="50" id="DzW-5F-BCy"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="JOg-4d-Vwa" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="40" id="1hT-AG-cDQ"/>
+                            <constraint firstItem="JOg-4d-Vwa" firstAttribute="top" secondItem="KzJ-7a-A5t" secondAttribute="bottom" constant="40" id="49Y-mC-kjb"/>
+                            <constraint firstItem="Nt5-mm-GUb" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="4wb-zZ-WAd"/>
                             <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="rwF-ig-3E6" secondAttribute="trailing" constant="50" id="BKR-O9-KTE"/>
                             <constraint firstItem="hsN-me-OpL" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" id="EP2-kp-kk2"/>
+                            <constraint firstItem="xCQ-VK-UBM" firstAttribute="trailing" secondItem="Nt5-mm-GUb" secondAttribute="trailing" id="FhE-Mc-eF6"/>
+                            <constraint firstItem="Nt5-mm-GUb" firstAttribute="top" secondItem="xCQ-VK-UBM" secondAttribute="bottom" constant="40" id="HIY-dF-AMZ"/>
+                            <constraint firstItem="rwF-ig-3E6" firstAttribute="top" secondItem="5aF-Bg-XDy" secondAttribute="bottom" constant="40" id="JQS-Kt-vsn"/>
                             <constraint firstItem="hsN-me-OpL" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="JT6-IU-w78"/>
-                            <constraint firstItem="JOg-4d-Vwa" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="KGr-go-mRC"/>
+                            <constraint firstItem="5aF-Bg-XDy" firstAttribute="trailing" secondItem="rwF-ig-3E6" secondAttribute="trailing" id="T13-Rq-Wrs"/>
+                            <constraint firstItem="JOg-4d-Vwa" firstAttribute="leading" secondItem="KzJ-7a-A5t" secondAttribute="leading" constant="8" id="TkQ-Wm-bs5"/>
+                            <constraint firstItem="KzJ-7a-A5t" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="16" id="XHY-TX-1U0"/>
+                            <constraint firstItem="xCQ-VK-UBM" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="16" id="ZHV-NU-1FY"/>
+                            <constraint firstItem="5aF-Bg-XDy" firstAttribute="leading" secondItem="rwF-ig-3E6" secondAttribute="leading" id="ZnM-nc-4LU"/>
                             <constraint firstItem="wLT-m7-5mM" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="ast-JH-m93"/>
                             <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="8" symbolic="YES" id="cfb-er-3JN"/>
                             <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="e1l-AV-tCB"/>
                             <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
+                            <constraint firstItem="xCQ-VK-UBM" firstAttribute="leading" secondItem="Nt5-mm-GUb" secondAttribute="leading" id="fPh-Ye-fPH"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="wLT-m7-5mM" secondAttribute="trailing" id="nVK-sL-Mgu"/>
+                            <constraint firstItem="JOg-4d-Vwa" firstAttribute="trailing" secondItem="KzJ-7a-A5t" secondAttribute="trailing" constant="-8" id="ooe-v3-ewK"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="hsN-me-OpL" secondAttribute="trailing" id="qhe-Be-6OW"/>
+                            <constraint firstItem="5aF-Bg-XDy" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="16" id="rEk-LV-ONX"/>
                             <constraint firstItem="wLT-m7-5mM" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="rRS-7O-TBS"/>
+                            <constraint firstItem="JOg-4d-Vwa" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="50" id="ziR-d5-6iN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
